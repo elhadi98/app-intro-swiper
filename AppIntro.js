@@ -1,4 +1,4 @@
-import assign from 'assign-deep';
+import _ from 'lodash';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
@@ -116,8 +116,7 @@ const defaulStyles = {
   },
   nextButtonText: {
     fontSize: 25,
-    fontWeight: 'bold',
-    fontFamily: 'Arial',
+    fontWeight: 'bold'
   },
   full: {
     height: 80,
@@ -131,7 +130,7 @@ class AppIntro extends Component {
   constructor(props) {
     super(props);
 
-    this.styles = StyleSheet.create(assign({}, defaulStyles, props.customStyles));
+    this.styles = StyleSheet.create(_.merge({}, defaulStyles, props.customStyles));
 
     this.state = {
       skipFadeOpacity: new Animated.Value(1),

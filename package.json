@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/Richi2293/rn-falcon-app-intro#readme",
   "dependencies": {
-    "assign-deep": "^0.4.5",
+    "lodash": "^4.17.15",
     "prop-types": "^15.5.8",
     "react-native-swiper": "git+https://github.com/Richi2293/react-native-swiper.git"
   },
